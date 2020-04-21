@@ -29,5 +29,5 @@ def pass_generate(pass_ori):
     return ''.join(pass_gen)
 
 if __name__ == '__main__':
-    pass_ori = [ord(i) for i in list(input())]
-    print(pass_generate(pass_ori))
+    pass_ori = [ord(i) for i in list(input('input password: '))]
+    print('generated password:', pass_generate(pass_ori))
